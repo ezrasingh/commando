@@ -2,12 +2,12 @@
 name = "commando"
 version = "0.1.0"
 authors = ["Ezra Singh <singhezra@gmail.com>"]
-description = ""
+description = "A Rust trait library for managing state and executing commands with built-in undo functionality, inspired by the Command design pattern."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/ezrasingh/commando"
 readme = "README.md"
-keywords = ["no_std"]
-categories = ["no-std"]
+keywords = ["command", "pattern", "time", "machine", "no_std"]
+categories = ["rust-patterns", "no-std"]
 exclude = [".github"]
 edition = "2021"
 rust-version = "1.85.0"
