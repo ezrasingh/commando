@@ -3,21 +3,6 @@
 version = 4
 
 [[package]]
-name = "commando"
-version = "0.1.0"
-dependencies = [
- "commando-macros",
-]
-
-[[package]]
-name = "commando-macros"
-version = "0.1.0"
-dependencies = [
- "quote",
- "syn",
-]
-
-[[package]]
 name = "proc-macro2"
 version = "1.0.94"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -39,14 +24,29 @@ dependencies = [
 name = "state_machine"
 version = "0.1.0"
 dependencies = [
- "commando",
+ "stratagem",
 ]
 
 [[package]]
 name = "state_with_undo"
 version = "0.1.0"
 dependencies = [
- "commando",
+ "stratagem",
+]
+
+[[package]]
+name = "stratagem"
+version = "0.1.0"
+dependencies = [
+ "stratagem-macros",
+]
+
+[[package]]
+name = "stratagem-macros"
+version = "0.1.0"
+dependencies = [
+ "quote",
+ "syn",
 ]
 
 [[package]]

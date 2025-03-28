@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-commando = { path = "../../commando", features = ["time-machine"] }
+stratagem = { path = "../../stratagem", features = ["time-machine"] }

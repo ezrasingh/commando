@@ -1,4 +1,4 @@
-use commando::*;
+use stratagem::*;
 
 // The state structure, containing a single value
 #[derive(Default, Commander)]

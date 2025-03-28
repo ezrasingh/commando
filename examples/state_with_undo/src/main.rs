@@ -1,4 +1,4 @@
-use commando::*;
+use stratagem::*;
 
 // Define an alias for the type representing a value.
 type Value<T = i32> = T;

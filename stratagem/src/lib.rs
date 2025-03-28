@@ -1,5 +1,5 @@
 #![no_std]
-pub use commando_macros::*;
+pub use stratagem_macros::*;
 
 #[cfg(feature = "time-machine")]
 pub mod time_machine;

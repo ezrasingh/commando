@@ -3,13 +3,14 @@ proc-macro = true
 
 
 [package]
-name = "commando-macros"
+name = "stratagem-macros"
 version = "0.1.0"
 edition = "2021"
 authors = ["Ezra Singh <singhezra@gmail.com>"]
 description = "Provides a derive macro for automatically implementing the Commander trait, simplifying command-based state management with undo/redo support."
 categories = ["rust-patterns", "development-tools::procedural-macro-helpers"]
 keywords = ["commando", "command", "pattern"]
+repository = "https://github.com/ezrasingh/stratagem"
 readme = "README.md"
 license = "MIT OR Apache-2.0"
 

@@ -1,4 +1,4 @@
 [workspace]
-members = ["commando", "commando-*", "examples/*"]
-default-members = ["commando", "commando-*"]
+members = ["stratagem", "stratagem-*", "examples/*"]
+default-members = ["stratagem", "stratagem-*"]
 resolver = "2"
