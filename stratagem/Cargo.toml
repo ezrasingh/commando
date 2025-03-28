@@ -11,7 +11,7 @@ readme = "README.md"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-stratagem-macros = { version = "*", path = "../stratagem-macros" }
+stratagem-macros = { version = "0.1.0", path = "../stratagem-macros" }
 
 [features]
 time-machine = []
