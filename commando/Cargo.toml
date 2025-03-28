@@ -1,0 +1,17 @@
+[package]
+name = "commando"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ezra Singh <singhezra@gmail.com>"]
+description = "A trait library that enables state management and command execution with built-in undo support, inspired by the Command design pattern."
+categories = ["rust-patterns", "no-std"]
+keywords = ["command", "pattern", "time", "machine", "no_std"]
+repository = "https://github.com/ezrasingh/commando"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+commando-macros = { version = "*", path = "../commando-macros" }
+
+[features]
+time-machine = []
