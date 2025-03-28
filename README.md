@@ -1,6 +1,6 @@
 # Commando
 
-Commando is a Rust trait library for managing state and executing commands with built-in undo functionality, with support for `no_std` environments. Inspired by the [Command design pattern](https://refactoring.guru/design-patterns/command/rust/example), it provides a flexible framework for modifying state through actions while tracking and undoing them efficiently.
+Commando is a Rust trait library that enables state management and command execution with built-in undo support, compatible with `no_std` environments. Inspired by the [Command design pattern](https://refactoring.guru/design-patterns/command/rust/example), it provides a flexible framework for modifying state through actions while tracking and undoing them efficiently.
 
 This makes Commando ideal for use cases requiring undo/redo functionality, such as interactive applications, game state management, and embedded systems where heap allocation is limited.
 
