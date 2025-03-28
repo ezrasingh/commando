@@ -20,6 +20,7 @@ The `Commander` trait defines how the state executes commands and undos (optiona
 ```rust
 use stratagem::Commander;
 
+#[derive(Default)]
 struct State {
     value: i32
 }
