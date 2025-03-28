@@ -18,7 +18,7 @@ This makes Stratagem ideal for use cases requiring undo/redo functionality, such
 The `Commander` trait defines how the state executes commands and undos (optional).
 
 ```rust
-use stratagem::prelude::*;
+use stratagem::Commander;
 
 #[derive(Default)]
 struct State {
@@ -41,7 +41,7 @@ impl State {
 We can achieve the same result by using the `Commander` derive macro.
 
 ```rust
-use stratagem::prelude::*;
+use stratagem::Commander;
 
 #[derive(Default, Commander)]
 struct State {
@@ -61,7 +61,7 @@ The `Command` trait defines how commands interact with the state during executio
 
 ```rust
 
-use stratagem::prelude::*;
+use stratagem::Command;
 
 // Define a command to translate (add/sub) a value to the state
 #[derive(Clone, Copy)]
@@ -117,7 +117,7 @@ impl Command<State> for Scale {
 Dynamically dispatch commands at runtime
 
 ```rust
-use stratagem::prelude::*;
+use stratagem::*;
 
 let mut state = State::default();
 
@@ -141,7 +141,7 @@ assert_eq!(state.value(), 5);
 By enabling the `time-machine` feature (requires `std` due to `Vec` and `Box` depencies) we can convert anything implementing the `Commander` trait into a `TimeMachine` which wraps the state and provides a `history` to store past commands. The underlying state is accessible from the `machine` property.
 
 ```rust
-use stratagem::prelude::*;
+use stratagem::time_machine::TimeMachine;
 
 let mut state: TimeMachine<State> = State::default().into();
 let mut cmd = Scale::from(10);
