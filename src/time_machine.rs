@@ -117,7 +117,6 @@ where
 #[cfg(test)]
 mod test {
     use super::*;
-    use crate::prelude::*;
 
     #[derive(Default, Commander)]
     struct State(i32);
