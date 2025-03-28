@@ -1,0 +1,23 @@
+[package]
+name = "commando"
+version = "0.1.0"
+authors = ["Ezra Singh <singhezra@gmail.com>"]
+description = ""
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ezrasingh/commando"
+readme = "README.md"
+keywords = ["no_std"]
+categories = ["no-std"]
+exclude = [".github"]
+edition = "2021"
+rust-version = "1.85.0"
+
+[workspace]
+members = ["macros", "examples/*"]
+default-members = ["macros"]
+
+[dependencies]
+commando-macros = { path = "macros" }
+
+[features]
+time-machine = []
