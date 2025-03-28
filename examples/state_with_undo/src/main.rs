@@ -56,7 +56,7 @@ impl Command<State> for Scale {
 }
 
 fn main() {
-    use commando::time_machine::TimeMachine;
+    use stratagem::time_machine::TimeMachine;
 
     let mut machine: TimeMachine<State> = State::default().into();
 
