@@ -20,7 +20,6 @@ The `Commander` trait defines how the state executes commands and undos (optiona
 ```rust
 use stratagem::Commander;
 
-#[derive(Default)]
 struct State {
     value: i32
 }
@@ -43,7 +42,7 @@ We can achieve the same result by using the `Commander` derive macro.
 ```rust
 use stratagem::Commander;
 
-#[derive(Default, Commander)]
+#[derive(Commander)]
 struct State {
     value: i32
 }
@@ -143,7 +142,7 @@ By enabling the `time-machine` feature (requires `std` due to `Vec` and `Box` de
 ```rust
 use stratagem::time_machine::TimeMachine;
 
-let mut state: TimeMachine<State> = State::default().into();
+let mut state = TimeMachine::<State>::default();;
 let mut cmd = Scale::from(10);
 
 state.execute(cmd);
